@@ -1,0 +1,46 @@
+#  if(user == 1 and computer == 0):
+#         print(f"your move: {dict2[user]}\ncomputer's move: {dict2[computer]}")
+#         print("You have won! Congratulations.")
+        
+#     elif(user == 0 and computer == -1):
+#         print(f"your move: {dict2[user]}\ncomputer's move: {dict2[computer]}")
+#         print("You have won! Congratulations.")
+        
+#     elif(user == -1 and computer == 1):
+#         print(f"your move: {dict2[user]}\ncomputer's move: {dict2[computer]}")
+#         print("You have won! Congratulations.")
+        
+#     elif(user == 1 and computer == -1):
+#         print(f"your move: {dict2[user]}\ncomputer's move: {dict2[computer]}")
+#         print("You Lose!")
+        
+#     elif(user == 0 and computer == 1):
+#         print(f"your move: {dict2[user]}\ncomputer's move: {dict2[computer]}")
+#         print("You Lose!")
+        
+        
+#     elif(user == -1 and computer == 0):
+#         print(f"your move: {dict2[user]}\ncomputer's move: {dict2[computer]}")        
+#         print("You Lose!")
+
+
+# trying to find out the logic of winning or losing:
+#  you               computer           logic             output
+#   1                   0              1 - 0 =              1            won
+#   0                  -1             0 - (-1) =           +1            won
+#  -1                   1             -1 - 1 =              0            won
+#   1                  -1             1 - (-1)=             2            lose
+#   0                   1             0 - 1 =               -1           lose
+#  -1                   0             -1 - 0 =              -1           lose
+#
+#hence concluded from this logic if you - computer == 2 or -1 , then it is lose
+# othervise if you - computer == 1 or 0 , then it is won
+# then we can try to deduce that by this logic we can make that large lines of 
+# programing into a few lines.
+
+# example :
+# if(user - computer == 2 or user - computer == -1):
+#     print("you lose")
+    
+# else:
+#     print("You won! congratulations")
