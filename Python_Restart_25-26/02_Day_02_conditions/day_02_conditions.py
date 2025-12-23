@@ -44,7 +44,7 @@ else:
 #---and---
 Your_name = input("Please enter your name: ")
 Your_age = int(input("Please enter your age: "))
-if Your_name == str and Your_age >= 18:
+if Your_name != "" and Your_age >= 18:
     print("Access Allowed! Welcome back User.")
 else:
     print("Access Denied! Please leave.")
