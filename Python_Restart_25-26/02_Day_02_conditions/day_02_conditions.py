@@ -56,4 +56,21 @@ if stream == "BCA" or college == "Jaat college":
     print("access allowed! you are gangster , og gang ")
 else:
     print("ha! you sucker! you are not from og gang, get out of here!")
+
+#---not----------
+Your_id = False
+if not Your_id:
+    print("Please log in first!")
+
+#-----------nested if---------
+userage = int(input("enter your age: "))
+username = input("enter your name: ")
+if userage >= 18:
+    if username != "":
+        print("verification done! you are a human")
+    else:
+        print("verification failed! you are not an human")
+else:
+    print("you are an minor! access denied!")
+    
     
