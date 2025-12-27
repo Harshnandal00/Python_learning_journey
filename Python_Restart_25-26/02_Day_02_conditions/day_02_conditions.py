@@ -5,72 +5,74 @@ Topics:
 - if
 - if-else
 - if-elif-else
-- input()
 - logical operators (and, or, not)
+- nested if
 """
 
-# ---------IF condition--------------------
-name = input("Please enter your name here: ")
+# --------- IF condition ---------
+name = input("Please enter your name: ")
+
 if name == "Harsh":
-    print("Welcome back! You are recognized as Master of the system. ")
+    print("Welcome back! You are recognized as Master of the system.")
 
-# ---------IF - Else condition-------------    
-age = int(input("Please entery your correct age: "))
-if age >=18:
-    print("You are welcome to the club\nEnjoy your time here with beautiful scenery.")
+# --------- IF - ELSE condition ---------
+age = int(input("Please enter your correct age: "))
 
+if age >= 18:
+    print("You are welcome to the club.")
+    print("Enjoy your time here with beautiful scenery.")
 else:
-    print("You are a minor and not allowed here.\nPlease leave.")
+    print("You are a minor and not allowed here.")
+    print("Please leave.")
 
-# -----------IF elif else condition-------------
-Marks_obtained = int(input("Please enter your correct marks here: "))
-if Marks_obtained >= 90:
-    print("Excellent! Keep it up our Topper! ")
+# --------- IF - ELIF - ELSE condition ---------
+marks_obtained = int(input("Please enter your marks: "))
 
-elif Marks_obtained >= 80:
-    print("Very Good! Just a little more to become a top student ")
-
-elif Marks_obtained >= 70:
-    print("Above average. Can do a lot better if you pay more attention to studies ")
-
-elif Marks_obtained >= 60:
-    print("You Barely passed. I think you should attend extra classes.")
-
+if marks_obtained >= 90:
+    print("Excellent! Keep it up, topper!")
+elif marks_obtained >= 80:
+    print("Very good! Just a little more to reach the top.")
+elif marks_obtained >= 70:
+    print("Above average. You can do much better.")
+elif marks_obtained >= 60:
+    print("You barely passed. Extra effort is needed.")
 else:
-    print("You Failed! Better prepare at parent teacher meeting.")
+    print("You failed. Prepare well for improvement.")
 
-# ------------------logical operators----------------
+# --------- Logical Operators ---------
 
-#---and---
-Your_name = input("Please enter your name: ")
-Your_age = int(input("Please enter your age: "))
-if Your_name != "" and Your_age >= 18:
-    print("Access Allowed! Welcome back User.")
+# AND operator
+user_name = input("Please enter your name: ")
+user_age = int(input("Please enter your age: "))
+
+if user_name != "" and user_age >= 18:
+    print("Access allowed! Welcome.")
 else:
-    print("Access Denied! Please leave.")
-   
-#---or---
-stream = input("What is your stream pal! : ")
-college = input("From which college are you from: ")
+    print("Access denied.")
+
+# OR operator
+stream = input("Enter your stream: ")
+college = input("Enter your college name: ")
+
 if stream == "BCA" or college == "Jaat college":
-    print("access allowed! you are gangster , og gang ")
+    print("Access allowed! OG gang confirmed.")
 else:
-    print("ha! you sucker! you are not from og gang, get out of here!")
+    print("Access denied. Not from OG gang.")
 
-#---not----------
-Your_id = False
-if not Your_id:
+# NOT operator
+user_id = False
+
+if not user_id:
     print("Please log in first!")
 
-#-----------nested if---------
-userage = int(input("enter your age: "))
-username = input("enter your name: ")
-if userage >= 18:
-    if username != "":
-        print("verification done! you are a human")
+# --------- Nested IF ---------
+user_age = int(input("Enter your age: "))
+user_name = input("Enter your name: ")
+
+if user_age >= 18:
+    if user_name != "":
+        print("Verification successful. You are human.")
     else:
-        print("verification failed! you are not an human")
+        print("Verification failed. Name missing.")
 else:
-    print("you are an minor! access denied!")
-    
-    
+    print("You are a minor. Access denied.")

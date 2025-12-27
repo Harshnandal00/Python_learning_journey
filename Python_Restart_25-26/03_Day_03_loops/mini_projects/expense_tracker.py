@@ -1,27 +1,35 @@
+# Day 03 Mini Project: Expense Tracker
+# Tracks user's expenses and shows total, count, and highest expense
+
 count = 0
 total_expense = 0
 highest_expenditure = 0
 
 while True:
-    user_input = (input("enter your expenses here(To exit press q): ")).lower()
+    user_input = input("Enter your expense (or 'q' to quit): ").lower()
 
-    if user_input == ("q"):
+    if user_input == "q":
         break
 
     try:
         expense = float(user_input)
     except ValueError:
-        print("Invalid Input! please enter a number.")
+        print("Invalid input! Please enter a valid number.")
+        continue  # Skip counting invalid input
 
+    # Update counts and totals
     count += 1
     total_expense += expense
-    
-    if highest_expenditure < expense:
+
+    # Update highest expense
+    if expense > highest_expenditure:
         highest_expenditure = expense
 
+# Show results
 if count > 0:
-    print("No. of expenses entered: ",count)
-    print("Total expenditure: ", total_expense)
-    print("Highest purchase/expenditure by user: ", highest_expenditure)
+    print("\nSummary of your expenses:")
+    print("Number of expenses entered:", count)
+    print("Total expenditure:", total_expense)
+    print("Highest expense:", highest_expenditure)
 else:
-    print("Please enter some expenses first!")
+    print("No expenses entered. Please add some expenses next time!")
