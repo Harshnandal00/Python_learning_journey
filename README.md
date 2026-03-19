@@ -1,3 +1,16 @@
+⚠️ Project Discontinued
+
+I want to sincerely apologize for discontinuing this repository.
+
+After some consideration, I’ve decided to rebuild this project from scratch to improve its structure, quality, and overall direction. Because of this, this repository will no longer be maintained.
+
+Thank you to everyone who showed interest or supported this project. I truly appreciate it.
+
+A new and improved version will be released soon.
+
+– Thank you for your understanding.
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 # Python Learning Journey 🐍
 
 This repository documents my structured journey of learning Python, starting from the fundamentals and progressing step by step through practice and exercises.
